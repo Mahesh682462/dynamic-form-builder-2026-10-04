@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Form Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dynamic Form Builder</h1>
+        <p>Add different types of input fields to the form dynamically.</p>
+
+        <div class="field-controls">
+            <select id="fieldType">
+                <option value="text">Text Input</option>
+                <option value="number">Number Input</option>
+                <option value="checkbox">Checkbox</option>
+                <option value="date">Date Input</option>
+            </select>
+            <button id="addFieldBtn">Add Field</button>
+        </div>
+
+        <form id="dynamicForm">
+            <h2>Your Custom Form</h2>
+            <div id="formFieldsContainer">
+                <!-- Dynamic fields will be added here -->
+            </div>
+            <button type="submit">Submit Form</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

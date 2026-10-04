@@ -1,0 +1,42 @@
+body { font-family: sans-serif; margin: 0; padding: 20px; background-color: #f4f4f4; color: #333; }
+.container {
+    max-width: 700px; margin: 30px auto; background: #fff; padding: 30px;
+    border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+h1, h2 { color: #0056b3; }
+.field-controls {
+    display: flex; gap: 10px; margin-bottom: 20px; align-items: center;
+}
+select, button {
+    padding: 10px 15px; border-radius: 4px; border: 1px solid #ddd; font-size: 1rem;
+}
+button {
+    background-color: #007bff; color: white; cursor: pointer; border: none;
+    transition: background-color 0.2s;
+}
+button:hover { background-color: #0056b3; }
+#dynamicForm {
+    margin-top: 20px; border-top: 1px solid #eee; padding-top: 20px;
+}
+.form-field-wrapper {
+    display: flex; align-items: center; gap: 10px; margin-bottom: 15px;
+    padding: 10px; border: 1px solid #eee; border-radius: 4px;
+    background-color: #f9f9f9;
+}
+.form-field-wrapper label { flex-basis: 120px; margin-right: 5px; }
+.form-field-wrapper input[type="text"],
+.form-field-wrapper input[type="number"],
+.form-field-wrapper input[type="date"] {
+    flex-grow: 1; padding: 8px; border: 1px solid #ccc; border-radius: 4px;
+}
+.form-field-wrapper input[type="checkbox"] { margin-left: 0; }
+.form-field-wrapper .remove-btn {
+    background-color: #dc3545; color: white; border: none;
+    padding: 6px 10px; border-radius: 4px; cursor: pointer;
+    transition: background-color 0.2s;
+}
+.form-field-wrapper .remove-btn:hover { background-color: #c82333; }
+#dynamicForm button[type="submit"] {
+    margin-top: 20px; padding: 12px 20px; background-color: #28a745;
+}
+#dynamicForm button[type="submit"]:hover { background-color: #218838; }
